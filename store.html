@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+	<meta charset="utf-8" />
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Bean Town</title>
+
+	<!-- style sheet list -->
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/store.css"
+
+	<!-- favicon link -->
+	<link rel="icon" href="images/favicon.ico">
+
+	<!-- slicknav code -->
+	<link rel="stylesheet" href="styles/slicknav.css">
+
+	<!-- jQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- local js slicknav script file -->
+	<script src="js/jquery.slicknav.min.js"></script>
+
+	<!-- slicknav script -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+	});
+	</script>
+</head>
+
+<body>
+	<header class="clearfix">
+			<a href="index.html"><img id="logoimage" src="images/logo.png" alt=""></a>
+            <a href="index.html"><h2>Bean Town</h2></a>
+	</header>
+
+<!-- slicknav navtag -->
+	<nav id="mobilemenu"></nav>
+
+<!-- nav menu -->
+	<nav id="nav_menu">
+		<ul class="container">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="bean.html">Food</a></li>
+			<li><a href="celebrity.html">Pop Culture</a></li>
+			<li id="last"><a href="store.html">Store</a></li>
+		</ul>
+	</nav>
+	<main>
+
+		<aside>
+            <form action="#" method="get">
+
+                <input type="text" name="search" id="search" placeholder="Search">
+
+                <h3>Gender</h3>
+
+                <div class="form-element">
+                    <input type="checkbox" name="women" id="women">
+                    <label for="women">Women</label>
+                </div>
+                <div class="form-element">
+                    <input type="checkbox" name="men" id="men">
+                    <label for="men">Men</label>
+                </div>
+                <div class="form-element">
+                    <input type="checkbox" name="boys" id="boys">
+                    <label for="boys">Boys</label>
+                </div>
+                <div class="form-element">
+                    <input type="checkbox" name="girls" id="girls">
+                    <label for="girls">Girls</label>
+                </div>
+
+                <div class="input-buttons">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+                
+            </form>
+        </aside>
+        <div class="products">
+            <div class="product">
+                <img src="images/product1.jpeg" alt="" class="thumbnail">
+                <h4 class="product-title">Beans T-Shirt</h4>
+                <p class="product-description">Beans. Just a funny shirt that say's Beans</p>
+                <h3 class="product-price"> &dollar;19.99</h3>
+            </div>
+            <div class="product">
+                <img src="images/product2.webp" alt="" class="thumbnail">
+                <h4 class="product-title">Beans T-Shirt</h4>
+                <p class="product-description">Beans. Just a funny shirt of Beans.</p>
+                <h3 class="product-price">&dollar;14.99</h3>
+            </div>
+            <div class="product">
+                <img src="images/product3.jpeg" alt="" class="thumbnail">
+                <h4 class="product-title">Beans T-Shirt</h4>
+                <p class="product-description">Beans. Just a funny shirt calling yourself the Bean Doctor.</p>
+                <h3 class="product-price">&dollar;19.99</h3>
+            </div>
+            <div class="product">
+                <img src="images/product4.webp" alt="" class="thumbnail">
+                <h4 class="product-title">Beans Pullover Hooded Jacket</h4>
+                <p class="product-description">Beans. Just a funnt hoodie of Beans.</p>
+                <h3 class="product-price">&dollar;29.99</h3>
+            </div>
+            <div class="product">
+                <img src="images/product5.webp" alt="" class="thumbnail">
+                <h4 class="product-title">Beans women's swimsuit</h4>
+                <p class="product-description">Beans. Just a funny swimsuit of Beans.</p>
+                <h3 class="product-price">&dollar;39.99</h3>
+            </div>
+            <div class="product">
+                <img src="images/product6.webp" alt="" class="thumbnail">
+                <h4 class="product-title">Beans Leggings</h4>
+                <p class="product-description">Beans. Just a funny pair of leggings of Beans.</p>
+                <h3 class="product-price">&dollar;39.99</h3>
+            </div>
+        </div>
+
+
+	</main>
+
+<!-- Javascript - Get Current Year for the Footer -->
+	<script>
+        window.onload = function() {
+            var d = new Date();
+            document.getElementById("copyright").innerHTML = d.getFullYear();
+        }
+    </script>
+
+	<footer>
+		<p>&copy; <span id="copyright"></span> Bean Town</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+	<meta charset="utf-8" />
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Bean Town</title>
+
+	<!-- style sheet list -->
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/bean.css">
+
+	<!-- favicon link -->
+	<link rel="icon" href="images/favicon.ico">
+
+	<!-- slicknav code -->
+	<link rel="stylesheet" href="styles/slicknav.css">
+
+	<!-- jQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- local js slicknav script file -->
+	<script src="js/jquery.slicknav.min.js"></script>
+
+	<!-- slicknav script -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+	});
+	</script>
+</head>
+
+<body>
+	<header class="clearfix">
+			<a href="index.html"><img id="logoimage" src="images/logo.png" alt=""></a>
+			<a href="index.html"><h2>Bean Town</h2></a>
+	</header>
+
+<!-- slicknav navtag -->
+	<nav id="mobilemenu"></nav>
+
+<!-- nav menu -->
+	<nav id="nav_menu">
+		<ul class="container">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="bean.html">Food</a></li>
+			<li><a href="celebrity.html">Pop Culture</a></li>
+			<li id="last"><a href="store.html">Store</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<aside>
+			<h1>Why are Beans Good For You?</h1>
+			<p>Beans and legumes are rich in plant protein, fiber, B-vitamins, iron, folate, calcium, potassium, phosphorus, and zinc. Most beans are also low in fat.</p><br>
+
+			<p> Legumes are similar to meat in nutrients, but with lower iron levels and no saturated fats. The high protein in legumes make them a great option in place of meat and dairy products. Vegetarians often substitute legumes for meat.</p><br>
+
+
+			<p> Legumes are a great source of fiber and may help you have regular bowel movements. Just 1 cup (240 mL) of cooked black beans will give you 15 grams (g) of fiber, which is about half of the recommended daily amount for adults.</p><br>
+
+
+			<p> Legumes are packed with nutrients. They are low in calories, but make you feel full. The body uses the carbohydrates in legumes slowly, over time, providing steady energy for the body, brain, and nervous system. Eating more legumes as part of a healthy diet can help lower blood sugar, blood pressure, heart rate, and other heart disease and diabetes risks.</p><br>
+
+
+			<p> Beans and legumes contain antioxidants that help prevent cell damage and fight disease and aging. The fiber and other nutrients benefit the digestive system, and may even help to prevent digestive cancers.</p><br>
+			<h1>How Are They Prepared</h1>
+			<p>Legumes can be added to any meal, for breakfast, lunch, or dinner. Once cooked, they can be eaten warm or cold.</p><br>
+
+			<h1>Where to Find Beans</h1>
+			<p>Legumes may be purchased at any grocery store or online. They do not cost a lot of money and can be stored for a very long time. They come in bags (dried beans), cans (already cooked), or jars.</p>
+		</aside>
+
+		<div class="row"> 
+			<div class="column">
+			  <img src="images/img1.jpeg">
+			  <img src="images/img2.jpeg">
+			  <img src="images/img3.jpeg">
+			  <img src="images/img4.jpeg">
+			  <img src="images/img5.jpeg">
+			</div>
+			
+			<div class="column">
+			  <img src="images/img6.jpeg">
+			  <img src="images/img7.webp">
+			  <img src="images/img8.jpeg">
+			  <img src="images/img9.jpeg">
+			  <img src="images/img10.jpeg">
+			</div> 
+			 
+			<div class="column">
+			  <img src="images/img11.webp">
+			  <img src="images/img12.webp">
+			  <img src="images/img13.jpeg">
+			  <img src="images/img14.jpeg">
+			  <img src="images/img15.jpeg">
+			</div>
+		  </div>
+	</main>
+
+<!-- Javascript - Get Current Year for the Footer -->
+	<script>
+        window.onload = function() {
+            var d = new Date();
+            document.getElementById("copyright").innerHTML = d.getFullYear();
+        }
+    </script>
+
+	<footer>
+		<p>&copy; <span id="copyright"></span> Bean Town</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+	<meta charset="utf-8" />
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Bean Town</title>
+
+	<!-- style sheet list -->
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+
+	<!-- favicon link -->
+	<link rel="icon" href="images/favicon.ico">
+
+	<!-- slicknav code -->
+	<link rel="stylesheet" href="styles/slicknav.css">
+	
+	<!-- jQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- local js slicknav script file -->
+	<script src="js/jquery.slicknav.min.js"></script>
+
+	<!-- slicknav script -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+	});
+	</script>
+</head>
+
+<body>
+	<header class="clearfix">
+			<a href="index.html"><img id="logoimage" src="images/logo.png" alt=""></a>
+			<a href="index.html"><h2>Bean Town</h2></a>
+	</header>
+
+<!-- slicknav navtag -->
+	<nav id="mobilemenu"></nav>
+
+<!-- nav menu -->
+	<nav id="nav_menu">
+		<ul class="container">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="bean.html">Food</a></li>
+			<li><a href="celebrity.html">Pop Culture</a></li>
+			<li id="last"><a href="store.html">Store</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<h1>All About Beans!</h1>
+		<p>Welcome to Bean Town! Come learn more about beans and their importance in popculture, and the culinary world.</p>
+		<aside id="asideleft">	
+			<nav id="nav_list">
+			<h2>Additional Resources</h2>
+				<ul>
+					<li><a href="https://www.loveandlemons.com/bean-recipes/" target="_blank">Healthy Meals</a></li>
+					<li><a href="https://www.lacademie.com/best-canned-baked-beans/" target="_blank">Popular Bean Brands</a></li>
+					<li><a href="https://www.medicalnewstoday.com/articles/320192" target="_blank">Health Benefits</a></li>
+				</ul>
+			</nav>
+			<article id="beanpictures">
+				<img src="images/beans2.jpeg">
+			</article>
+		</aside>
+
+		<section>
+			<p id="sectiondescription">Bean Town is a communal website that takes in as well as explores information, content, products that have in some way shape or form a connection to beans.</p>
+
+			<blockquote>They pick me [to be tested for steroids] every time. I don't know why. I don't know if it's because I'm a big guy, or what, but all I know is all they are going to find is a lot of rice and beans.
+			- David Ortez
+			</blockquote>
+
+			<h3 id="offers">Bean Town Offers</h3>
+			<img class="icon" src="images/foodimage.jpeg">
+			<h3><a href="dishes.html">Food</a></h3>
+			<p>Bean Town offers you an indepth analysis of why Beans are the perfect vegetable for you!</p>
+			<img class="icon" src="images/beanman.png">
+			<h3><a href="celebrity.html">Culture</a></h3>
+			<p>Did you know how big beans are in popculture? Bean Town goes over celebrities that have an obvious relationship with Beans.</p>
+			<img class="icon" src="images/shopimage.webp">
+			<h3><a href="store.html">Store</a></h3>
+			<p>Bean Town offers plenty of bean realted goods that you can use for laughs or to display!</p>
+		</section>
+	</main>
+
+<!-- Javascript - Get Current Year for the Footer -->
+	<script>
+        window.onload = function() {
+            var d = new Date();
+            document.getElementById("copyright").innerHTML = d.getFullYear();
+        }
+    </script>
+
+	<footer>
+		<p>&copy; <span id="copyright"></span> Bean Town</p>
+	</footer>
+</body>
+</html>
